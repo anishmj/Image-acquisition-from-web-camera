@@ -1,51 +1,15 @@
-# Image-Acquisition-from-Web-Camera
-## Aim 
-To write a python program using OpenCV to capture the image from the web camera and do the following image manipulations.
-i) Write the frame as JPG 
-ii) Display the video 
-iii) Display the video by resizing the window
-iv) Rotate and display the video
+#!/usr/bin/env python
+# coding: utf-8
 
-## Software Used
-Anaconda - Python 3.7
-## Algorithm
-### Step 1:
-Import Opencv Package.  
+# In[1]:
 
-### Step 2:
-Capture the Video from the WebCamera.
 
-### Step 3:
-Write the image to a file
+pip install opencv-python
 
-### Step 4:
-Show the image or the live camera.
 
-### Step 5:
-End the program.
+# In[8]:
 
-## Program:
-~~~
 
-Developed By: ANISH MJ
-Register No: 212221230005
-~~~
-
-## i) Write the frame as JPG file
-~~~
-import cv2
-video = cv2.VideoCapture(0)
-while (True):
-    cap,frame=video.read()
-    cv2.imwrite('video.jpeg',frame) 
-    result = False
-video.release()
-cv2.destroyAllWindows()
-
-~~~
-
-## ii) Display the video
-~~~
 import cv2
 video = cv2.VideoCapture(0)
 while (True):
@@ -55,13 +19,11 @@ while (True):
         break
 video.release()
 cv2.destroyAllWindows()
-~~~
 
 
+# In[ ]:
 
-## iii) Display the video by resizing the window
 
-~~~
 import cv2
 import numpy as np
 cap  = cv2.VideoCapture(0)
@@ -80,11 +42,11 @@ while True:
         break
 video.release()
 cv2.destroyAllWindows()
-~~~   
+    
 
 
-## iv) Rotate and display the video
-~~~
+# In[7]:
+
 
 import cv2
 import numpy as np
@@ -104,33 +66,10 @@ while True:
         break
 video.release()
 cv2.destroyAllWindows()
-~~~
+
+
+# In[ ]:
 
 
 
 
-
-
-## Output
-
- i) Write the frame as JPG image
-![an](an1.png)
-
-### ii) Display the video
-![an](an1.png)
-
-
-### iii) Display the video by resizing the window
-![an](an2.png)
-
-
-
-### iv) Rotate and display the video
-![an](an3.png)
-
-
-
-
-
-## Result:
-Thus the image is accessed from webcamera and displayed using openCV.
